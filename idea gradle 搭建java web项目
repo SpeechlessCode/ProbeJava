@@ -1,0 +1,26 @@
+
+### idea gradle 搭建java web项目
+
+## 步骤1，创建项目
+1. 新建项目
+2. 选择`Gradle` -> `Java`
+3. 填写`GroupId` -> 组织id，可分多级。比如，cn.rdhuang
+4. 填写`ArtifactId` -> 表示项目产物名称 light
+5. 选择`Use default gradle warpper` ， 请根据个人Gradle配置情况设置
+
+## 步骤2，设置web项目需要的配置
+
+1. 拷贝Gradle配置信息到项目中
+2. `Ctrl + Alt + Shift + S` 进入项目设置
+3. 选择`Modules`
+4. 在**步骤1**填写的`ArtifactId`名称下，右键，选择`Web`
+5. 修改`Web`中的Path及`Web Resource Directory`信息，接着在右下脚创建产物`Create Artifacts`
+
+至此，项目主体信息已创建完毕。
+
+## 步骤3，搭建运行环境(Jetty)
+
+>操作前请先下载Jetty
+
+1. `Ctrl + Alt + S` 进入Settings，搜索`Application Servers`
+2. 添加`Jetty `
